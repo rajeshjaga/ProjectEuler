@@ -14,14 +14,11 @@ function fiboEvenSum(n) {
         temp = a + b;
         a = b;
         b = temp;
-        if (temp % 2 === 0 && temp <= n) {
-            sum += temp;
-        }
+        if (temp % 2 === 0 && temp <= n) sum += temp;
     }
-
     return sum;
 }
 
-// console.log(fiboEvenSum(8));
-// console.log(fiboEvenSum(10));
-console.log(fiboEvenSum(34));
+console.log(fiboEvenSum(8));//10
+console.log(fiboEvenSum(10));//10
+console.log(fiboEvenSum(34));//44
